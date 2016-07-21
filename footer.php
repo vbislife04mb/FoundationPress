@@ -11,12 +11,13 @@
 ?>
 
 		</section>
-		<div id="footer-container">
-			<footer id="footer">
+		<div id="footer-container" class="small-12 row align-center">
+			<h6>Copyright Express Pawn | SEO and Website by <strong>Localmize</strong></h6>
+			<!-- <footer id="footer" class="small-12 row">
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
 				<?php do_action( 'foundationpress_after_footer' ); ?>
-			</footer>
+			</footer> -->
 		</div>
 
 		<?php do_action( 'foundationpress_layout_end' ); ?>

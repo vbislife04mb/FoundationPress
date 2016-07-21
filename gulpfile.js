@@ -13,17 +13,13 @@ var del         = require('del');
 
 // Enter URL of your local server here
 // Example: 'http://localwebsite.dev'
-var URL = '';
+var URL = 'http://localhost/Express-Pawn/';
 
 // Check for --production flag
 var isProduction = !!(argv.production);
 
 // Browsers to target when prefixing CSS.
-var COMPATIBILITY = [
-  'last 2 versions',
-  'ie >= 9',
-  'Android >= 2.3'
-];
+var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
 
 // File paths to various assets are defined here.
 var PATHS = {
