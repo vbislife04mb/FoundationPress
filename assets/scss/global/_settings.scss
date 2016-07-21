@@ -55,6 +55,9 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #ec5840,
 );
+$blue: #20276E;
+$yellow: #FFCC06;
+$grey: #4a4a4a;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -62,15 +65,15 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: Arial Black, Arial, sans-serif;
 $body-antialiased: true;
-$global-margin: 1rem;
-$global-padding: 1rem;
+$global-margin: 0;
+$global-padding: 0;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
-$global-flexbox: false;
+$global-flexbox: true;
 $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
@@ -94,7 +97,8 @@ $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
   small: 20px,
-  medium: 30px,
+  medium: 20px,
+  large: 20px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -105,27 +109,27 @@ $block-grid-max: 8;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
-$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
+$font-family-monospace: 'Arial Black', Arial, san-serif, monospace;
 $header-sizes: (
   small: (
-    'h1': 24,
-    'h2': 20,
+    'h1': 28,
+    'h2': 22,
     'h3': 19,
     'h4': 18,
     'h5': 17,
     'h6': 16,
   ),
   medium: (
-    'h1': 48,
-    'h2': 40,
-    'h3': 31,
-    'h4': 25,
+    'h1': 32,
+    'h2': 28,
+    'h3': 24,
+    'h4': 22,
     'h5': 20,
     'h6': 16,
   ),
 );
 $header-color: inherit;
-$header-lineheight: 1.4;
+$header-lineheight: 1;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
@@ -307,7 +311,7 @@ $dropdown-sizes: (
 // -----------------
 
 $dropdownmenu-arrows: true;
-$dropdownmenu-arrow-color: $anchor-color;
+$dropdownmenu-arrow-color: $blue;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: $white;
 $dropdownmenu-border: 1px solid $medium-gray;
@@ -379,8 +383,8 @@ $mediaobject-image-width-stacked: 100%;
 $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
-$menu-item-color-active: $white;
-$menu-item-background-active: #121212;
+$menu-item-color-active: $yellow;
+$menu-item-background-active: $white;
 $menu-icon-spacing: 0.25rem;
 
 // 23. Meter
@@ -525,7 +529,7 @@ $tab-content-padding: 1rem;
 // 33. Thumbnail
 // -------------
 
-$thumbnail-border: solid 4px $white;
+$thumbnail-border: none;
 $thumbnail-margin-bottom: $global-margin;
 $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
 $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
@@ -535,13 +539,13 @@ $thumbnail-radius: $global-radius;
 // 34. Title Bar
 // -------------
 
-$titlebar-background: $black;
-$titlebar-color: $white;
+$titlebar-background: $white;
+$titlebar-color: $blue;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
-$titlebar-icon-color: $white;
-$titlebar-icon-color-hover: $medium-gray;
-$titlebar-icon-spacing: 0.25rem;
+$titlebar-icon-color: $blue;
+$titlebar-icon-color-hover: $yellow;
+$titlebar-icon-spacing: 0.125rem;
 
 // 35. Tooltip
 // -----------
@@ -558,8 +562,8 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0;
-$topbar-background: #121212;
+$topbar-background: $white;
 $topbar-submenu-background: $topbar-background;
-$topbar-link-color: #fff;
+$topbar-link-color: $blue;
 $topbar-input-width: 200px;
-$topbar-unstack-breakpoint: medium;
+$topbar-unstack-breakpoint: large;

@@ -1,0 +1,214 @@
+/*Global styles*/
+
+* {
+
+/*background-color: rgba( 0, 255, 0, 0.2 );*/
+
+}
+
+@font-face {
+  font-family: 'Arial Black';
+  src: url("../fonts/Arial-Black.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+/*Type styles*/
+h1,h2,h3,h4,h5,p,li {
+	font-family: 'Arial Black', Arial, san-serif;
+	color: $blue;
+	text-align: left;
+}
+
+h5 {
+	margin-top: 5px;
+	margin-right: 5px;
+	text-align: right;
+ 	color: $blue;
+ 	font-size: 1em;
+}
+p, li{
+	font-family: Helvetica;
+	font-size: 16px;
+}
+
+
+.logo {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.action-bar {
+	padding: 10px 10px 5px 5px;
+}
+
+.menu {
+	font-family: 'Arial Black', Arial, san-serif;
+	a {
+		padding: 0;
+		color: $blue;
+	}
+	 a:hover {
+      color: $yellow;
+    }
+    li {
+	list-style: none;
+	}
+}
+
+.desktop-menu {
+	justify-content: center;
+}
+.dropdown > li {
+	padding-left: 10px;
+}
+.fa {
+	color: $blue;
+	margin-left: auto;
+}
+.section {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.space {
+	margin-bottom: 10px;
+}
+img {
+	width: 100%;
+}
+/*********  Home  **********/
+
+.main-info {
+	background-color: $blue;
+	h2 {
+		font-size: 22px;
+		padding: 30px 0;
+	}
+}
+
+.yellow {
+	background-color: $yellow;
+}
+
+.line-icons {
+	svg {
+		height: 60px;
+	}
+	margin-bottom: 10px;
+}
+/**********  Loans  **********/
+.loans {
+	background-color: $grey;
+	h2 {
+		text-align: center;
+	}
+	h3 {
+		text-decoration: underline;
+		text-align: left;
+		margin-bottom: 0;
+	}
+	p {
+		margin-top: 15px;
+	}
+}
+
+/**********  Locations  **********/
+
+.locations {
+	background: linear-gradient(rgba(255,204,6,0.40)100%, rgba(255,204,6,0.40)100%), url('http://omahahls.com/expresspawntemp/wp-content/uploads/2016/05/locationbw.jpg') center center/cover  ;
+	width: 100%;
+	height: 100%;
+	img {
+		border-radius: 5px;
+		width: 100%;
+	}
+	h2 {
+		text-align: center;
+		font-size: 24px;
+	}
+}
+
+.line-icon {
+	height: 80px;
+	fill: none;
+}
+svg path:hover {
+	fill: $yellow;
+}
+
+.selected {
+	border: solid white 1px;
+	fill: #FFCC06;
+}
+
+.product-page {
+	background-color: $yellow;
+}
+.product-card {
+	background-color: $white;
+	margin-top: 5px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+}
+.side-bar {
+	h4,p {
+		color: $blue;
+	}
+	img {
+		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	}
+}
+.location-info {
+	background: $white;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	margin-top: 20px;
+	h4 {
+		padding-top: 10px;
+	}
+	h4, p {
+		padding-left: 20px;
+	}
+}
+iframe {
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+.productinfo {
+	h3, p {
+		color: $blue;
+	}
+	img {
+	width: 80px;
+	}
+}
+
+.phone {
+	height: 80px;
+}
+@media (min-width: 500px) { 
+	.line-icons svg {
+		height: 90px;
+	}
+}
+.white {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+
+.red {
+	background-color: red;
+}
+.purple {
+	background-color: purple;
+}
+.green {
+	background-color: green;
+}
+.blue {
+	background-color: blue;
+}
+.orange {
+	background-color: orange;
+}

@@ -1,8 +1,17 @@
-.sites-button {
-  background: #FF6908;
-  font-size: 1.25rem;
-  font-weight: bold;
-  box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
-  border-radius: 3px;
-  border: none;
+button {
+	padding: 8px 10px;
+	border: 3px solid $white;
+	border-radius: 100px;
+	font-family: 'Arial Black', 'Arial', san-serif;
+	font-size: 16px;
+	text-align: center;
+	color: $white;
+	
+}
+button:hover {
+	background-color: $yellow;
+}
+.button-blue {
+	border: 3px solid $blue;
+	color: $blue;
 }
